@@ -29,7 +29,7 @@ public class GameView extends View {
         }
         float scale = ((float) width / (ducks[0].getWidth() * 5));
         Rect duckRect = new Rect(0, 0, width / 5, (int) (ducks[0].getHeight() * scale));
-        game = new Game(duckRect, 5, .03f, .2f);
+        game = new Game(duckRect, 20, .03f, .2f);
         game.setDuckSpeed(width * .00003f);
         game.setBulletSpeed(width * .0003f);
         game.setDeltaTime(DELTA_TIME);
